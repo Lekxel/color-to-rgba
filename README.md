@@ -8,7 +8,9 @@
 
 Then you can use like this:
 `let rgba = colorsToRGBA('red', 0.5)`
+
 `let rgba = colorsToRGBA('#f04', 0.8)`
+
 `let rgba = colorsToRGBA('#ff00f2')`
 
 ### To get the list of common colors string
