@@ -1,5 +1,5 @@
 /**
- * @name _colorsByName
+ * @name colorsByName
  * @description List of commonly used colors
  */
 const _colorsByName: { [key: string]: string } = {

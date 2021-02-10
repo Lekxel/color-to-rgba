@@ -1,4 +1,4 @@
-import _colorsByName from './helpers/_colorsByName.js';
+import colorsByName from './helpers/colorsByName.js';
 
 /**
  * @name colorsToRGBA
@@ -7,7 +7,7 @@ import _colorsByName from './helpers/_colorsByName.js';
  * @returns `String` It returns rgba with the alpha set the specified value
  */
 const colorsToRGBA = (color: string, alpha: number) => {
-  return /^#([A-Fa-f0-9]{3}){1,2}$/.test(color) ? convert(color, alpha) : convert(_colorsByName[color], alpha);
+  return /^#([A-Fa-f0-9]{3}){1,2}$/.test(color) ? convert(color, alpha) : convert(colorsByName[color], alpha);
 };
 
 const convert = (color: string, alpha: number = 1) => {
@@ -21,7 +21,5 @@ const convert = (color: string, alpha: number = 1) => {
 
   return `rgba(${[(colorOctal >> 16) & 255, (colorOctal >> 8) & 255, colorOctal & 255].join(',')},${alpha})`;
 };
-
-export { _colorsByName };
 
 export default colorsToRGBA;
