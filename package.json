@@ -1,5 +1,5 @@
 {
-	"name": "colors-to-rgba",
+	"name": "color-to-rgba",
 	"version": "1.0.1",
 	"description": "Convert any valid color to rgba",
 	"main": "lib/index.js",
@@ -14,7 +14,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Lekxel/colors-to-rgba.git"
+		"url": "git+https://github.com/Lekxel/color-to-rgba.git"
 	},
 	"keywords": [
 		"rgba",
@@ -25,9 +25,9 @@
 	"author": "Lekan Lawal",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/Lekxel/colors-to-rgba/issues"
+		"url": "https://github.com/Lekxel/color-to-rgba/issues"
 	},
-	"homepage": "https://github.com/Lekxel/colors-to-rgba#readme",
+	"homepage": "https://github.com/Lekxel/color-to-rgba#readme",
 	"devDependencies": {
 		"@types/jest": "^26.0.20",
 		"jest": "^26.6.3",

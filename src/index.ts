@@ -1,13 +1,13 @@
-import colorsByName from './helpers/colorsByName.js';
+import colorByName from './helpers/colorByName.js';
 
 /**
- * @name colorsToRGBA
+ * @name colorToRGBA
  * @param color `string` The valid color to convert to rgba (e.g red or #ff0000)
  * @param alpha `Number` The opacity of the generated rgba (default 1)
- * @returns `String` It returns rgba with the alpha set the specified value
+ * @returns `String` Returns rgba with the alpha set to the specified value
  */
-const colorsToRGBA = (color: string, alpha: number) => {
-  return /^#([A-Fa-f0-9]{3}){1,2}$/.test(color) ? convert(color, alpha) : convert(colorsByName[color], alpha);
+const colorToRGBA = (color: string, alpha: number) => {
+  return /^#([A-Fa-f0-9]{3}){1,2}$/.test(color) ? convert(color, alpha) : convert(colorByName[color], alpha);
 };
 
 const convert = (color: string, alpha: number = 1) => {
@@ -22,4 +22,4 @@ const convert = (color: string, alpha: number = 1) => {
   return `rgba(${[(colorOctal >> 16) & 255, (colorOctal >> 8) & 255, colorOctal & 255].join(',')},${alpha})`;
 };
 
-export default colorsToRGBA;
+export default colorToRGBA;

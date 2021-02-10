@@ -1,8 +1,8 @@
 /**
- * @name colorsByName
- * @description List of commonly used colors
+ * @name colorByName
+ * @description List of commonly used color
  */
-const _colorsByName: { [key: string]: string } = {
+const _colorByName: { [key: string]: string } = {
   aliceblue: '#f0f8ff',
   antiquewhite: '#faebd7',
   aqua: '#00ffff',
@@ -146,4 +146,4 @@ const _colorsByName: { [key: string]: string } = {
   yellowgreen: '#9acd32',
 };
 
-export default _colorsByName;
+export default _colorByName;
